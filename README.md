@@ -21,6 +21,8 @@ names(work) #Check the variables available in data set
 class(work$sex) #check the class of the variable "sex"
 table(work$sex) #show the data count of male and female while 1=male and 2=female
 with(work,tapply(wage,sex,mean)) #check the mean wage of male and female
+      1        2 
+59299.41 44537.57 
 #create a boxplot to show the summarized data
 boxplot(work$wage~work$sex,las=1,ylab="Wage",xlab="Gender",main="Wage by Gender")
 ```
@@ -29,6 +31,8 @@ From the boxplot we knew that that is quite a number of outliers in both gender.
 Median approach has been added to compare the difference.<br/>
 ``` javascript
 with(work,tapply(wage,sex,median))
+ 1        2 
+40043.86 31165.67 
 ```
 Create the Test-stat 1 & 2 and run a Two-Sample t-test<br/>
 Test-stat 1 for mean difference and Test-stat 2 for median difference.<br/>
@@ -80,6 +84,8 @@ round(Boot_test_stat2[1:25],1)
 P1 <- mean(Boot_test_stat1 >= test_stat1)
 P2 <- mean(Boot_test_stat2 >= test_stat2)
 P1;P2
+ P1       P2 
+ 0        0 
 ```
 According to the result, both mean is equal to zero<br/>
 Out of the 40000 bootstrapping outcome of mean and median difference<br/>
@@ -92,3 +98,6 @@ with(work,tapply(wage, sex, sd))
       1        2 
 58271.75 46209.52 
 ```
+Since the standard deviation of wage is very huge for both gender, the result of bootstrapping becomes reasonable.<br/>
+Thus,H0 is failed to reject<br/>
+The Wage inequality issues does not exsist between male and female since the mean and meadian difference between wage of male and female is statistically equal to zero
