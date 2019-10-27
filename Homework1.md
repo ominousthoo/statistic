@@ -1,7 +1,7 @@
 # Homework 1
 ## Introduction
 Since the Bootstrapping is introduced during the class, I have decided to run a simple Bootstrap testing to compare wages between male and female to determine the wage inequality issues between male and female.<br/>
-The data file employment.csv has been used in this test and it is downloaded from the moodle site provided.<br/>
+The data file [employment.csv](https://github.com/ominousthoo/statistic/blob/Data-files/employment.csv) has been used in this test and it is downloaded from the moodle site provided.<br/>
 Data Analysis has been analysed using R Studio.<br/>
 This study is focusing on wage inequality since the relationship between wage and education has been proved long time ago.
 
@@ -131,3 +131,5 @@ The Wage inequality issues does not exsist between male and female since the mea
 *MarinStatsLecutres - Introduction to Hypothesis Testing in R*<br/>
 *GitHub Help - Basic writing and formatting syntax*<br/>
 *DataCamp - Quick R-Tutorial*<br/>
+<br/>
+*You can access to my GitHub pages [here](https://github.com/ominousthoo/statistic/blob/Homework/Homework1.md).*
