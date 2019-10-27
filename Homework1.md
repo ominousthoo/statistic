@@ -132,4 +132,4 @@ The Wage inequality issues does not exsist between male and female since the mea
 *GitHub Help - Basic writing and formatting syntax*<br/>
 *DataCamp - Quick R-Tutorial*<br/>
 <br/>
-*You can access to my GitHub pages [here](https://github.com/ominousthoo/statistic/blob/Homework/Homework1.md).*
+*You can access to my GitHub pages for Homework 1 [here](https://github.com/ominousthoo/statistic/blob/Homework/Homework1.md).*
