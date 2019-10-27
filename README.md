@@ -24,7 +24,7 @@ with(work,tapply(wage,sex,mean)) #check the mean wage of male and female
 #create a boxplot to show the summarized data
 boxplot(work$wage~work$sex,las=1,ylab="Wage",xlab="Gender",main="Wage by Gender")
 ```
-![Image of Boxplot](https://github.com/ominousthoo/statistic/blob/Data-files/Rplot.png)
+![Image of Boxplot](https://github.com/ominousthoo/statistic/blob/Data-files/Rplot.png)<br/>
 From the boxplot we knew that that is quite a number of outliers in both gender.<br/>
 Median approach has been added to compare the difference.<br/>
 ``` javascript
@@ -89,4 +89,6 @@ Thus, another check has been ran to find out the reason<br/>
 Another code has been used to check the standard deviation of wage for male and female.<br/>
 ```javascript
 with(work,tapply(wage, sex, sd)) 
+      1        2 
+58271.75 46209.52 
 ```
