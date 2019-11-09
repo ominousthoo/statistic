@@ -14,7 +14,7 @@ This study is focusing on wage inequality since the relationship between wage an
 **Data Importing and Exploration**<br/>
 Set directory and Import the Data files named as "work".<br/>
 Display the data set imported as follow.<br/>
-``` javascript
+``` r
 setwd("C:/Users/Kai Lim/Desktop/R Data File")
 work <- read.csv(file="employment.csv",header=TRUE,sep=",")
 View(work)
@@ -41,14 +41,14 @@ Along with the scatterplot, a linear model fitted line and lowess fitted line ha
 ![Image of Boxplot](https://github.com/ominousthoo/statistic/blob/Data-files/Rplot.png)<br/>
 From the boxplot above we knew that there is quite a number of outliers in both gender which will be going to influence the mean to be bias.<br/>
 Therefore, Median approach has been added to compare the difference.<br/>
-``` javascript
+``` r
 with(work,tapply(wage,sex,median))
  1        2 
 40043.86 31165.67 
 ```
 Create the Test-stat 1 & 2 and run a Two-Sample t-test<br/>
 Test-stat 1 for mean difference and Test-stat 2 for median difference.<br/>
-```javascript
+```r
 #absolute difference has been assigned to test_stat1 for mean difference
 #absolute difference has been assigned to test_stat2 for median difference
 test_stat1 <- abs(mean(work$wage[work$sex=="1"])-mean(work$wage[work$sex=="2"]))
@@ -71,7 +71,7 @@ mean in group 1 mean in group 2
 ```
 **Bootstrapping Process**<br/>
 Bootstrap has been ran using the R-code below.<br/>
-```javascript
+```r
 set.seed(112233) #use set seed for reproducibility
 n <- length(work$sex) #the number of observation to sample
 n #check the number of observation to sample
@@ -86,7 +86,7 @@ dim(BootstrapS) #check the dimension of matrix
 Lets create the vector to store the Bootstrap Test-stat<br/>
 Calculate boot_test_stat 1 and 2 and save the mean and median difference<br/>
 boot_test_stat1 for mean difference and boot_test_stat2 for median difference<br/>
-```javascript
+```r
 Boot_test_stat1 <- rep(0,B)
 Boot_test_stat2 <- rep(0,B)
 for (i in 1:B){
@@ -99,7 +99,7 @@ for (i in 1:B){
 Check the outcome of bootstrap in the first column<br/>
 Compare the first 25 outcome of bootstrap with the test-stat<br/>
 The p-value of the bootstrapping outcome has been printed.<br/>
-```javascript
+```r
 round(Boot_test_stat1[1:25],1)
 round(Boot_test_stat2[1:25],1)
 #TRUE will be presented if the outcome of bootstrap is bigger than test-stat
