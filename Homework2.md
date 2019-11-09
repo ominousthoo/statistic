@@ -74,3 +74,24 @@ legend("bottomright",
        col = c("green", "636", "654", "367", "black"), lty = c(2, 3, 4, 5, 1), lwd = 2,cex=0.75)
 ```
 ![Regression Line](https://github.com/ominousthoo/statistic/blob/Data-files/Rplot03.png)<br/>
+After illustrating the regression line above, the next step is to create a matrix of estimation for the different model in order to calculate and compare the bias, variance and mean square error of the estimator between the polynomial model with different degree. In this simulation, the value of `x = 20` has been picked in order to measure and compare the performance between different polynomial model. For the real situation, `log(20)` will be equal to `2.996` and this will be used to measure the performance of the polynomial model by measuring how far was the estimation of the model is from the real result which is `2.996`. Thus, the codes will be shown below.
+``` r
+set.seed(112233) #use set.seed for reproducibility of the data
+nrun <- 200 #calculate for 200 estimation in each model
+nreg <- 4 #total 4 model has been build
+x <- data.frame(x=20) #this will be the real data to be measured
+#log(20) = 2.996
+estm = matrix(0,nrow=nrun,ncol=nreg) # create a matrix with 4 columns
+for (sam in 1:nrun){                 #and 200 rows to store the generated data
+  data1 = gen_data_func(f)
+  reg1=lm(y~poly(x,degree = 1), data=data1)
+  reg2=lm(y~poly(x,degree = 2), data=data1)
+  reg3=lm(y~poly(x,degree = 5), data=data1)
+  reg4=lm(y~poly(x,degree = 10), data=data1)
+  
+  estm[sam,1]=predict(reg1,x) #fill the matrix with the estimation
+  estm[sam,2]=predict(reg2,x)
+  estm[sam,3]=predict(reg3,x)
+  estm[sam,4]=predict(reg4,x)
+}
+```
