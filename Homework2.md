@@ -138,5 +138,11 @@ Thus, the simulation has clearly shows that the bias of estimator will decrease 
 |   5    | 0.0567 |    0.0026    |  0.0541  |
 |   10   | 0.1011 |    0.0000    |  0.1010  |
 ```
+### Reference
+*David Dalpiaz - R for Statistical Learning*<br/>
+*GitHub Help - Basic writting and formatting syntax*<br/>
+*DataCamp - Quick-R Tutorial*<br/>
+*Scott Fortmann-Roe - Understanding the Bias-Variance Tradeoff*<br/>
+*Machine Learning Mastery - Gentle Introduction to the Bias-Variance Tradeoff in Machine Learning*<br/>
 <br/>
-<br/>
+*You can access to my GitHub pages for Homework 2 [here](https://github.com/ominousthoo/statistic/blob/Homework/Homework2.md).*
