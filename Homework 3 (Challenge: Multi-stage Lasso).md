@@ -129,12 +129,14 @@ V6  -1.028875
 V7  9.927208
 ```
 ### Conclusion
-According to the results of relaxo, the significant coefficients has been reduced to only 7 which is excatly the same as the "true" model and the value of each coefficients is close enough to the "true" coefficients which is 4, -3, -5, 5, 7, -1 and 10. Thus, from the simulation above it clearly shows us that the limitation of each kind of estimation method and under this circumtances, Relaxo is the best method to reduce and shrink the number of coefficients.
+According to the results of relaxo, the significant coefficients has been reduced to only 7 which is excatly the same as the "true" model and the value of each coefficients is close enough to the "true" coefficients which is 4, -3, -5, 5, 7, -1 and 10. Thus, from the simulation above it clearly shows us that the limitation of each kind of estimation method and under this circumtances, Relaxo is the best method to reduce and shrink the number of coefficients.<br/>
+<br/>
+<br/>
 
-*Reference*
-*Jiaming Mao - Model Selection and Regularization*
-*GitHub Help - Basic Formatting and Writting Syntax*
-*DataCamp - Quick R-tutorial*
-*Nicome - The Data Blog*
-
+*Reference*<br/>
+*Jiaming Mao - Model Selection and Regularization*<br/>
+*GitHub Help - Basic Formatting and Writting Syntax*<br/>
+*DataCamp - Quick R-tutorial*<br/>
+*Nicome - The Data Blog*<br/>
+<br/>
 *You can access to my GitHub pages for other Homeworks [here](https://github.com/ominousthoo/statistic/tree/Homework).*
