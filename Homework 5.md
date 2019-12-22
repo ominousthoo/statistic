@@ -202,3 +202,11 @@ data.frame(Model,MisclassificationRate)
 ```
 <br/>
 <br/>
+*Reference*<br/>
+*Jiaming Mao - Decision Tree and Ensemble Methods*<br/>
+*GitHub Help - Basic Formatting and Writting Syntax*<br/>
+*DataCamp - Quick R-Tutorial*<br/>
+*Parul Pandey - A Guide to Machine Learning in R for Beginners: Decision Trees*
+*Guru99 - Decision Tree in R with Example*
+<br/>
+*You can access to my GitHub pages for other Homeworks [here](https://github.com/ominousthoo/statistic/tree/Homework).*
